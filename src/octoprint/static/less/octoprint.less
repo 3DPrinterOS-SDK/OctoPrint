@@ -8,6 +8,42 @@
 // Body
 body {
   //padding-top: 60px;
+  background-color: #f2f5f7;
+  color: #212529;
+  font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.btn{
+  text-shadow: none !important;
+  background-image: none !important;
+}
+a {
+  color: #289be8;
+  text-decoration: none;
+}
+
+.btn-primary{
+  color: #fff;
+  background-color: #289be8 !important;;
+  border-width: 0;
+  border-color: #1580c8 !important;;
+  font-weight: 400;
+  border-bottom-width: 2px;
+  background-image: none !important;
+  &:hover,&:focus{
+    background-color: #1580c8 !important;
+  }
+}
+
+select {
+  background-color: #fff;
+  border: 1px solid #c3d2da;
+}
+
+.btn-primary[disabled], .btn-primary:disabled,.btn-primary.disabled{
+  color: #6e94ad;
+  background-color: #98b8cd !important;
+  border-color: #7691a2 !important;
+  background-image: none !important;
 }
 
 // Navigation bar
@@ -108,6 +144,10 @@ body {
 }
 
 #navbar .navbar-inner {
+  background-image: none !important;
+  background-color: #ffffff !important;
+  border: 0px solid transparent;
+  box-shadow: none;
   @base: #F2F2F2;
   .navbar-inner-color(@base);
 
@@ -221,7 +261,7 @@ body {
     border-left: 1px solid #DDD;
     border-right: 1px solid #DDD;
     border-bottom: 1px solid #DDD;
-
+    background-color: #ffffff;
     @radius: 4px;
     .border-bottom-right-radius(@radius);
     .border-bottom-left-radius(@radius);
@@ -240,7 +280,7 @@ body {
     line-height: 40px;
     color: #333;
     border: 0;
-    border-bottom: 1px solid #E5E5E5;
+    border-bottom: 1px solid  #e4e9ed;
     font-weight: normal;
   }
 
@@ -657,7 +697,7 @@ ul.dropdown-menu li a {
     .entry {
       padding: @padding;
       line-height: @line-height;
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid  #e4e9ed;
       position: relative;
 
       &:hover {
@@ -671,7 +711,7 @@ ul.dropdown-menu li a {
 
       .internal, .uploaded, .size, .additionalInfo {
         font-size: 85%;
-        color: #999;
+        color: #849099;
       }
 
       .uploaded *[title] {
@@ -1232,6 +1272,10 @@ textarea.block {
 .modal.large {
   width: 975px;
   margin-left: -487px;
+  border: transparent;
+}
+.modal-footer {
+  background-color: #f2f5f7;
 }
 
 .full-sized-box {
