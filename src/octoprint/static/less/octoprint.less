@@ -64,6 +64,12 @@ select {
   }
 }
 
+.brand {
+  span {
+    background-image: url(../img/your_logo_small.svg) !important;
+  }
+}
+
 .brand (@color, @dark, @light) when (@color = @dark) {
   span {
     background-image: url(../img/tentacle-20x20.png);
@@ -221,23 +227,28 @@ select {
   }
 
   .brand {
-    padding: 10px 20px 6px;
+    //padding: 10px 20px 6px;
+    padding: 2px 20px 2px;
 
     span {
-      padding-left: 26px;
+      //padding-left: 26px;
+      padding-left: 145px;
 
       // background properties left standalone intentionally, otherwise we overwrite the image
-      background-size: 20px 20px;
+      //background-size: 20px 20px;
+      background-size: 145px 38px;
       background-repeat: no-repeat;
 
       display: inline-block;
-      max-width: 250px;
+      //max-width: 250px;
+      max-width: 0;
       white-space: nowrap;
       overflow: hidden;
-      text-overflow: ellipsis;
+      //text-overflow: ellipsis;
       vertical-align: top;
       line-height: 20px;
-      height: 24px;
+      //height: 24px;
+      height: 36px;
     }
   }
 }
